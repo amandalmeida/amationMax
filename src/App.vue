@@ -2,7 +2,7 @@
   <div class="container">
     <div class="block" :class="{animate: animatedBlock}"></div>
     <button @click="animatedBlock">Animate</button>
-  </div>
+  </div> 
   <base-modal @close="hideDialog" v-if="dialogIsVisible">
     <p>This is a test dialog!</p>
     <button @click="hideDialog">Close it!</button>
@@ -20,7 +20,7 @@ export default {
       dialogIsVisible: false };
   },
   methods: {
-    animatedBlock() {
+    animateBlock() {
       
     },
     showDialog() {
@@ -32,6 +32,7 @@ export default {
   },
 };
 
+//transitions events 
 //If a keyframe is defined multiple times but not all affected properties are in each keyframe, only the values specified in the latest keyframe are considered.
 </script>
 

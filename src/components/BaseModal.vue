@@ -1,12 +1,15 @@
 <template>
   <div class="backdrop" @click="$emit('close')"></div>
-  <dialog open>
+  <transition>
+    <dialog open>
     <slot></slot>
   </dialog>
+  </transition>
 </template>
 
 <script>
 export default {
+  props: ['open'],
   emits: ['close'],
 };
 </script>
